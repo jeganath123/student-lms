@@ -1,0 +1,17 @@
+
+  server:
+    port: 3001
+  spring:
+    application:
+      name: studentservice
+    profiles:
+      active: dev
+    config:
+        import: configserver:http://localhost:8888
+  instanceId: s1
+
+#eureka:
+#  client:
+#    enabled: true
+#    register-with-eureka: true
+#    service-url: http://localhost:8761/
